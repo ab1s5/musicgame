@@ -23,4 +23,10 @@ public class ArcMovingController : MonoBehaviour
         angle = Mathf.Rad2Deg * Mathf.Atan2(mousePosition.y - center.y, mousePosition.x - center.x) - 90;
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
+
+    public float GetArcAngle()
+    {
+        if (angle <= 0) return -angle;
+        else return 360 - angle;
+    }
 }

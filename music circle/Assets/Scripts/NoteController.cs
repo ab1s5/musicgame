@@ -26,9 +26,45 @@ public class NoteController : MonoBehaviour
         scale = (timing - time) / (float)duration;
         if (scale < 0) scale = 0;
         transform.localScale = new Vector2(scale, scale);
-        if (time > timing + 50) Destroy(gameObject);
+
+        if ((timing - 25 <= time) && (time < timing + 25))
+        {
+            if ((-angle >= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() - 22.5) && (-angle <= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() + 22.5))
+            {
+                GetJust();
+                Destroy(gameObject);
+            }
+        }
+        else if ((timing + 25 <= time) && (time < timing + 125))
+        {
+            if ((-angle >= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() - 22.5) && (-angle <= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() + 22.5))
+            {
+                GetSlow();
+                Destroy(gameObject);
+            }
+        }
+        else if (time >= timing + 125)
+        {
+            GetMiss();
+            Destroy(gameObject);
+        }
+
     }
 
+    void GetJust()
+    {
+        Debug.Log("Just!");
+    }
+
+    void GetSlow()
+    {
+        Debug.Log("Slow");
+    }
+
+    void GetMiss()
+    {
+        Debug.Log("miss...");
+    }
     //IEnumerator shrink()
     //{
     //    for (int i = duration; i > 0; i--)
