@@ -9,7 +9,7 @@ public class NoteCreateManager : MonoBehaviour
     public GameObject note;
 
     private List<int> noteTiming = new List<int>();
-    private List<int> noteAngle = new List<int>();
+    private List<float> noteAngle = new List<float>();
     private int noteCount = 0;
 
     private int duration = -1;
@@ -17,9 +17,9 @@ public class NoteCreateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        duration = GameObject.Find("GameData").GetComponent<Constants>().GetDuration();
+        duration = Constants.Instance.GetDuration();
 
-        TextAsset chart = Resources.Load("Charts/note", typeof(TextAsset)) as TextAsset;
+        TextAsset chart = Resources.Load("Charts/nightmarewoods", typeof(TextAsset)) as TextAsset;
         StringReader sr = new StringReader(chart.text);
 
         string line = sr.ReadLine();
@@ -29,7 +29,7 @@ public class NoteCreateManager : MonoBehaviour
         {
             data = line.Split(',');
             noteTiming.Add(Convert.ToInt32(data[0]));
-            noteAngle.Add(-Convert.ToInt32(data[1]));
+            noteAngle.Add(-Convert.ToSingle(data[1]));
             noteCount += 1;
             line = sr.ReadLine();
         }

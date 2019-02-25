@@ -13,7 +13,7 @@ public class NoteController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        duration = GameObject.Find("GameData").GetComponent<Constants>().GetDuration();
+        duration = Constants.Instance.GetDuration();
         
         transform.position = new Vector2((float)2.5 * Mathf.Cos(Mathf.Deg2Rad * (angle + 90)), (float)2.5 * Mathf.Sin(Mathf.Deg2Rad * (angle + 90)));
     }
