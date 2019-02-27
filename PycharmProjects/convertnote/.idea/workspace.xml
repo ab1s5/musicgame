@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aec0db1-36de-4932-9ebc-c984b86d19a7" name="Default Changelist" comment="" />
+    <list default="true" id="2aec0db1-36de-4932-9ebc-c984b86d19a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convertednote.txt" beforeDir="false" afterPath="$PROJECT_DIR$/convertednote.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rawnote.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rawnote.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Prefabs/Note.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Prefabs/Note.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Resources/Charts/nightmarewoods.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Resources/Charts/nightmarewoods.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Resources/Charts/note.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Resources/Charts/note.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Scripts/MusicPlayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Scripts/MusicPlayController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Scripts/NoteController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Scripts/NoteController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Scripts/NoteCreateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Scripts/NoteCreateManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/StateCache/Hierarchy/ab6366-2466463e2709c784cb.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/StateCache/Hierarchy/ab6366-2466463e2709c784cb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/StateCache/Hierarchy/ab6366-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/StateCache/Hierarchy/ab6366-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/StateCache/SceneView/f1c03f-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/StateCache/SceneView/f1c03f-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/11/11727a0a4180bf344a604402d28cfb0e" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/11/11727a0a4180bf344a604402d28cfb0e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/22/22619e33e9bbbc84e88750bb1522097b" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/22/22619e33e9bbbc84e88750bb1522097b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/24/2466463e2709c784cb6c3747cbebeab1" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/24/2466463e2709c784cb6c3747cbebeab1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/24/2466463e2709c784cb6c3747cbebeab1.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/24/2466463e2709c784cb6c3747cbebeab1.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/44/44428ba3bbe21654dbe12f2cf591c49f" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/44/44428ba3bbe21654dbe12f2cf591c49f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/78/7821eaaa6e0c9f94bac1336b5165d214" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/78/7821eaaa6e0c9f94bac1336b5165d214" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/78/7821eaaa6e0c9f94bac1336b5165d214.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/78/7821eaaa6e0c9f94bac1336b5165d214.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/e6/e69b1709e7342ba4088a6668e9e65853" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/e6/e69b1709e7342ba4088a6668e9e65853" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,12 +44,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/convertnote.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="532">
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -28,6 +63,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -40,6 +78,7 @@
     <option name="width" value="974" />
     <option name="height" value="1167" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -116,20 +155,20 @@
     <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32981783" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32917467" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -138,8 +177,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/convertnote.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        <state relative-caret-position="532">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
         </state>
       </provider>
     </entry>

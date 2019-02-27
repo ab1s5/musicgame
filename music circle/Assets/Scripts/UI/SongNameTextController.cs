@@ -17,5 +17,6 @@ public class SongNameTextController : MonoBehaviour
     {
         if (Constants.Instance.GetMusicName() == "nightmarewoods") text.text = "Nightmare Woods";
         else if (Constants.Instance.GetMusicName() == "yee") text.text = "Yee";
+        else if (Constants.Instance.GetMusicName() == "wielderbossbgm") text.text = "Wielder Boss BGM";
     }
 }

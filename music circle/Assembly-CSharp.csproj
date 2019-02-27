@@ -62,18 +62,22 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ArcMovingController.cs" />
     <Compile Include="Assets\Scripts\Constants.cs" />
+    <Compile Include="Assets\Scripts\Game Setting\MusicSelectController.cs" />
     <Compile Include="Assets\Scripts\Game Setting\NoteSpeedSelectController.cs" />
     <Compile Include="Assets\Scripts\Game Setting\NoteSpeedSetController.cs" />
     <Compile Include="Assets\Scripts\Game Setting\SongSelectController.cs" />
     <Compile Include="Assets\Scripts\GameSceneTransitionController.cs" />
+    <Compile Include="Assets\Scripts\HitSoundController.cs" />
     <Compile Include="Assets\Scripts\MusicPlayController.cs" />
     <Compile Include="Assets\Scripts\NoteController.cs" />
     <Compile Include="Assets\Scripts\NoteCreateManager.cs" />
+    <Compile Include="Assets\Scripts\StartDelayManager.cs" />
     <Compile Include="Assets\Scripts\TimeManager.cs" />
     <Compile Include="Assets\Scripts\UI\NoteSpeedTextController.cs" />
     <Compile Include="Assets\Scripts\UI\SongNameTextController.cs" />
     <None Include="Assets\Resources\Charts\nightmarewoods.txt" />
-    <None Include="Assets\Resources\Charts\note.txt" />
+    <None Include="Assets\Resources\Charts\wielderbossbgm.txt" />
+    <None Include="Assets\Resources\Charts\yee.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/fairy/Downloads/musicgame/music circle/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

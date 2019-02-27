@@ -27,7 +27,7 @@ public class Constants : MonoBehaviour
     public string musicName;
 
     private int musicNumber = 0;
-    private const int musicCount = 2;
+    private const int musicCount = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +38,7 @@ public class Constants : MonoBehaviour
     {
         if (musicNumber == 0) musicName = "nightmarewoods";
         else if (musicNumber == 1) musicName = "yee";
+        else if (musicNumber == 2) musicName = "wielderbossbgm";
         else if (musicNumber == musicCount) musicNumber = 0;
         else if (musicNumber == -1) musicNumber = musicCount - 1;
     }
@@ -61,6 +62,7 @@ public class Constants : MonoBehaviour
     {
         if (name == "nightmarewoods") musicNumber = 0;
         else if (name == "yee") musicNumber = 1;
+        else if (name == "wielderbossbgm") musicNumber = 2;
     }
 
     public int GetMusicNumber()
