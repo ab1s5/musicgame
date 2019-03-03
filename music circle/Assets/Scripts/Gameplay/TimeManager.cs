@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-    public float time = 0;
+    public float time = -2;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +14,7 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //time += Time.deltaTime;
+        if (time < 0) time += Time.deltaTime;
         //print(time);
     }
 

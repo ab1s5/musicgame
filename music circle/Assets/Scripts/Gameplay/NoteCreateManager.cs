@@ -77,9 +77,32 @@ public class NoteCreateManager : MonoBehaviour
     {
         for (int i = 0; i < noteCount; i++)
         {
-            GameObject noteCreated = Instantiate(note);
-            noteCreated.GetComponent<NoteController>().timing = noteTiming[i];
-            noteCreated.GetComponent<NoteController>().angle = noteAngle[i];
+            if ((i != noteCount - 1) && (noteTiming[i] == noteTiming[i + 1]))
+            {
+                GameObject lineParent = new GameObject("line");
+                LineParentController lpc = lineParent.AddComponent<LineParentController>();
+                
+                GameObject noteCreated1 = Instantiate(note);
+                noteCreated1.transform.SetParent(lineParent.transform);
+                LineNoteController lnc1 = noteCreated1.AddComponent<LineNoteController>();
+                lnc1.timing = noteTiming[i];
+                lnc1.angle = noteAngle[i];
+
+                GameObject noteCreated2 = Instantiate(note);
+                noteCreated2.transform.SetParent(lineParent.transform);
+                LineNoteController lnc2 = noteCreated2.AddComponent<LineNoteController>();
+                lnc2.timing = noteTiming[i];
+                lnc2.angle = noteAngle[i + 1];
+                
+                i++;
+            }
+            else
+            {
+                GameObject noteCreated = Instantiate(note);
+                NoteController nc = noteCreated.AddComponent<NoteController>();
+                nc.timing = noteTiming[i];
+                nc.angle = noteAngle[i];
+            }
         }
     }
 }

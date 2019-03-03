@@ -20,8 +20,6 @@ public class StartDelayManager : MonoBehaviour
     }
     void StartGame()
     {
-        gameObject.GetComponent<TimeManager>().enabled = true;
-        gameObject.GetComponent<NoteCreateManager>().enabled = true;
         musicObject.SetActive(true);
     }
 }

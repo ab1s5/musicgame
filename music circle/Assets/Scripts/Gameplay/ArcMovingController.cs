@@ -26,6 +26,7 @@ public class ArcMovingController : MonoBehaviour
 
     public float GetArcAngle()
     {
+        //Debug.Log(angle);
         if (angle <= 0) return -angle;
         else return 360 - angle;
     }

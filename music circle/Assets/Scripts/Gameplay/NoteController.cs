@@ -8,13 +8,13 @@ public class NoteController : MonoBehaviour
     public float angle;
     public GameObject hitsound;
 
-    private int duration;
-    private int time;
-    private float scale;
+    protected int duration;
+    protected int time;
+    protected float scale;
 
-    private bool fastJust;
+    protected bool fastJust;
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
         duration = Constants.Instance.GetDuration();
         hitsound = GameObject.Find("HitSound");
@@ -22,30 +22,36 @@ public class NoteController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected void Update()
     {
         time = GameObject.Find("GameData").GetComponent<TimeManager>().GetCurrenttime();
         scale = (timing - time) / (float)duration;
         if ((scale < 0) || (scale > 1)) scale = 0;
         transform.localScale = new Vector2(scale, scale);
 
-        if ((timing - 25 <= time) && (time < timing))
+        ProcessNote();
+    }
+
+    void ProcessNote()
+    {
+        float arcAngle = GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle();
+        if ((timing - 30 <= time) && (time < timing))
         {
-            if ((-angle >= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() - 22.5) && (-angle <= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() + 22.5))
+            if ((-angle >= arcAngle - 22.5) && (-angle <= arcAngle + 22.5))
             {
                 fastJust = true;
             }
         }
-        else if ((timing <= time) && (time < timing + 25))
+        else if ((timing <= time) && (time < timing + 30))
         {
-            if (fastJust || ((-angle >= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() - 22.5) && (-angle <= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() + 22.5)))
+            if (fastJust || ((-angle >= arcAngle - 22.5) && (-angle <= arcAngle + 22.5)))
             {
                 GetJust();
             }
         }
-        else if ((timing + 25 <= time) && (time < timing + 125))
+        else if ((timing + 30 <= time) && (time < timing + 125))
         {
-            if ((-angle >= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() - 22.5) && (-angle <= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() + 22.5))
+            if ((-angle >= arcAngle - 22.5) && (-angle <= arcAngle + 22.5))
             {
                 GetSlow();
             }
@@ -55,7 +61,6 @@ public class NoteController : MonoBehaviour
             GetMiss();
         }
     }
-
     void GetJust()
     {
         hitsound.GetComponent<HitSoundController>().PlayHitSound();
