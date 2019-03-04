@@ -6,22 +6,23 @@ public class LineNoteController : NoteController
 {
     bool hit = false;
 
-    void ProcessNote()
+    protected override void ProcessNote()
     {
-        if ((timing - 125 <= time) && (time < timing + 125))
+        float arcAngle = GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle();
+
+        if ((timing - 125 <= time) && (time < timing + 125) && hit == false)
         {
-            if ((-angle >= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() - 22.5) && (-angle <= GameObject.Find("Arc").GetComponent<ArcMovingController>().GetArcAngle() + 22.5))
+            if ((-angle >= arcAngle - 22.5) && (-angle <= arcAngle + 22.5))
             {
                 hit = true;
+                gameObject.GetComponentInParent<LineParentController>().UpNoteCount();
+            }
+
+            if ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5))
+            {
+                hit = true;
+                gameObject.GetComponentInParent<LineParentController>().UpNoteCount();
             }
         }
     }
-    //IEnumerator shrink()
-    //{
-    //    for (int i = duration; i > 0; i--)
-    //    {
-            
-    //        yield return new WaitForSeconds(.001f);
-    //    }
-    //}
 }

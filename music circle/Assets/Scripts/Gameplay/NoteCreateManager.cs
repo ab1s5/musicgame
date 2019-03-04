@@ -10,6 +10,7 @@ public class NoteCreateManager : MonoBehaviour
 
     private List<int> noteTiming = new List<int>();
     private List<float> noteAngle = new List<float>();
+    private List<string> noteColor = new List<string>();
     private int noteCount = 0;
 
     private int duration = -1;
@@ -42,6 +43,7 @@ public class NoteCreateManager : MonoBehaviour
             data = line.Split(',');
             noteTiming.Add(Convert.ToInt32(data[0]));
             noteAngle.Add(-Convert.ToSingle(data[1]));
+            noteColor.Add(data[2]);
             noteCount += 1;
             line = sr.ReadLine();
         }
@@ -81,6 +83,7 @@ public class NoteCreateManager : MonoBehaviour
             {
                 GameObject lineParent = new GameObject("line");
                 LineParentController lpc = lineParent.AddComponent<LineParentController>();
+                lpc.timing = noteTiming[i];
                 
                 GameObject noteCreated1 = Instantiate(note);
                 noteCreated1.transform.SetParent(lineParent.transform);
@@ -102,7 +105,19 @@ public class NoteCreateManager : MonoBehaviour
                 NoteController nc = noteCreated.AddComponent<NoteController>();
                 nc.timing = noteTiming[i];
                 nc.angle = noteAngle[i];
+                SetNoteColor(noteCreated, noteColor[i]);
             }
         }
+    }
+
+    void SetNoteColor(GameObject note, string color)
+    {
+        Color notecolor = note.GetComponent<SpriteRenderer>().color;
+        if (color == "r") note.GetComponent<SpriteRenderer>().color = Color.red;
+        else if (color == "b") note.GetComponent<SpriteRenderer>().color = Color.blue;
+        else if (color == "y") note.GetComponent<SpriteRenderer>().color = Color.yellow;
+        else if (color == "g") note.GetComponent<SpriteRenderer>().color = Color.green;
+        else if (color == "m") note.GetComponent<SpriteRenderer>().color = Color.magenta;
+        else if (color == "x") note.GetComponent<SpriteRenderer>().color = Color.gray;
     }
 }
