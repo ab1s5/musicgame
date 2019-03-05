@@ -90,13 +90,15 @@ public class NoteCreateManager : MonoBehaviour
                 LineNoteController lnc1 = noteCreated1.AddComponent<LineNoteController>();
                 lnc1.timing = noteTiming[i];
                 lnc1.angle = noteAngle[i];
+                SetNoteColor(noteCreated1, noteColor[i]);
 
                 GameObject noteCreated2 = Instantiate(note);
                 noteCreated2.transform.SetParent(lineParent.transform);
                 LineNoteController lnc2 = noteCreated2.AddComponent<LineNoteController>();
                 lnc2.timing = noteTiming[i];
                 lnc2.angle = noteAngle[i + 1];
-                
+                SetNoteColor(noteCreated2, noteColor[i]);
+
                 i++;
             }
             else
