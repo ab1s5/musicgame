@@ -21,6 +21,8 @@ public class TimeManager : MonoBehaviour
         if (Constants.Instance.GetMusicName() == "nightmarewoods" && time > 70) sceneTransition.GoToScene();
         else if (Constants.Instance.GetMusicName() == "yee" && time > 9) sceneTransition.GoToScene();
         else if (Constants.Instance.GetMusicName() == "wielderbossbgm" && time > 80) sceneTransition.GoToScene();
+        else if (Constants.Instance.GetMusicName() == "forthetop" && time > 97) sceneTransition.GoToScene();
+        else if (Constants.Instance.GetMusicName() == "winter" && time > 125) sceneTransition.GoToScene();
     }
 
     public int GetCurrenttime()

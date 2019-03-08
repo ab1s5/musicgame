@@ -36,6 +36,14 @@ public class NoteCreateManager : MonoBehaviour
         {
             chart = Resources.Load("Charts/wielderbossbgm", typeof(TextAsset)) as TextAsset;
         }
+        else if (Constants.Instance.GetMusicNumber() == 3)
+        {
+            chart = Resources.Load("Charts/forthetop", typeof(TextAsset)) as TextAsset;
+        }
+        else if (Constants.Instance.GetMusicNumber() == 4)
+        {
+            chart = Resources.Load("Charts/winter", typeof(TextAsset)) as TextAsset;
+        }
         StringReader sr = new StringReader(chart.text);
 
         string line = sr.ReadLine();

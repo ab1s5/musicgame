@@ -45,6 +45,10 @@ public class NoteController : MonoBehaviour
             {
                 fastJust = true;
             }
+            if ((-angle - 360 >= arcAngle - 22.5) && (-angle - 360 <= arcAngle + 22.5)) // code for 337.5 <= angle < 360
+            {
+                fastJust = true;
+            }
         }
         else if ((timing <= time) && (time < timing + 30))
         {
@@ -56,6 +60,10 @@ public class NoteController : MonoBehaviour
             {
                 GetJust();
             }
+            else if ((-angle - 360 >= arcAngle - 22.5) && (-angle - 360 <= arcAngle + 22.5))
+            {
+                GetJust();
+            }
         }
         else if ((timing + 30 <= time) && (time < timing + 125))
         {
@@ -64,6 +72,10 @@ public class NoteController : MonoBehaviour
                 GetSlow();
             }
             else if ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5))
+            {
+                GetSlow();
+            }
+            else if ((-angle - 360 >= arcAngle - 22.5) && (-angle - 360 <= arcAngle + 22.5))
             {
                 GetSlow();
             }
