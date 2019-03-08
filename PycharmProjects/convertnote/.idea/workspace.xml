@@ -2,40 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aec0db1-36de-4932-9ebc-c984b86d19a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/symmetry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/convertnote.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/convertnote.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convertednote.txt" beforeDir="false" afterPath="$PROJECT_DIR$/convertednote.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rawnote.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rawnote.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/.vs/music circle/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../music circle/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Prefabs/Note.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Prefabs/Note.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Resources/Charts/nightmarewoods.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Resources/Charts/nightmarewoods.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Resources/Charts/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Resources/Charts/note.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Scripts/MusicPlayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Scripts/MusicPlayController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Scripts/NoteController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Scripts/NoteController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Scripts/NoteCreateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Scripts/NoteCreateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Assets/Scenes/Result.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Assets/Scenes/Result.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/CurrentLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/LastSceneManagerSetup.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Library/StateCache/Hierarchy/ab6366-2466463e2709c784cb.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/StateCache/Hierarchy/ab6366-2466463e2709c784cb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/BuiltinAssemblies.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.TextMeshPro.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptAssemblies/Unity.TextMeshPro.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/ScriptMapper" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../music circle/Library/StateCache/Hierarchy/ab6366-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/StateCache/Hierarchy/ab6366-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Library/StateCache/SceneView/f1c03f-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/StateCache/SceneView/f1c03f-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../music circle/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/11/11727a0a4180bf344a604402d28cfb0e" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/11/11727a0a4180bf344a604402d28cfb0e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/22/22619e33e9bbbc84e88750bb1522097b" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/22/22619e33e9bbbc84e88750bb1522097b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/24/2466463e2709c784cb6c3747cbebeab1" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/24/2466463e2709c784cb6c3747cbebeab1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/24/2466463e2709c784cb6c3747cbebeab1.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/24/2466463e2709c784cb6c3747cbebeab1.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/44/44428ba3bbe21654dbe12f2cf591c49f" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/44/44428ba3bbe21654dbe12f2cf591c49f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/78/7821eaaa6e0c9f94bac1336b5165d214" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/78/7821eaaa6e0c9f94bac1336b5165d214" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/78/7821eaaa6e0c9f94bac1336b5165d214.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/78/7821eaaa6e0c9f94bac1336b5165d214.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/e6/e69b1709e7342ba4088a6668e9e65853" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/e6/e69b1709e7342ba4088a6668e9e65853" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/1b/1b355da31ea043feba0c03e35dd4bc62" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/1b/1b355da31ea043feba0c03e35dd4bc62" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/38/38c8faf1788024c02930a0c68a6e0edc" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/38/38c8faf1788024c02930a0c68a6e0edc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/3a/3a84de5cd0624681b6b6dcd8921d912a" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/3a/3a84de5cd0624681b6b6dcd8921d912a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/3b/3bb0254b9671413d9d08a855c5090237" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/3b/3bb0254b9671413d9d08a855c5090237" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/3e/3e9a2175e0404f7ea30b2b694850bae0" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/3e/3e9a2175e0404f7ea30b2b694850bae0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/40/405b9b51bb344a128608d968297df79c" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/40/405b9b51bb344a128608d968297df79c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/41/4113173d5e95493ab8765d7b08371de4" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/41/4113173d5e95493ab8765d7b08371de4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/41/412ab55857eaea74ebe668aed7037023" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/41/412ab55857eaea74ebe668aed7037023" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/46/46098a81a64a45c5b756320e10a22f13" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/46/46098a81a64a45c5b756320e10a22f13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/4a/4a3ecb1425d14502837abea459cf2b70" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/4a/4a3ecb1425d14502837abea459cf2b70" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/4b/4b3fa4bde7f1451a8218c03ee6a8ded8" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/4b/4b3fa4bde7f1451a8218c03ee6a8ded8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/4b/4ba2329b63d54f0187bcaa12486b1b0f" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/4b/4ba2329b63d54f0187bcaa12486b1b0f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/53/53ebcfaa2e1e4e2dbc85882cd5a73fa1" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/53/53ebcfaa2e1e4e2dbc85882cd5a73fa1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/5f/5f32cd94baa94578a686d4b9d6b660f7" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/5f/5f32cd94baa94578a686d4b9d6b660f7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/6a/6a10b2909283487f913b00d94cd3faf5" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/6a/6a10b2909283487f913b00d94cd3faf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/6e/6e2d432c5ea14e75aa3a79f90f704442" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/6e/6e2d432c5ea14e75aa3a79f90f704442" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/6f/6fe576b47d8b47688ec5d02bccd15cf9" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/6f/6fe576b47d8b47688ec5d02bccd15cf9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/76/7668179ede524d6396c8b7d84461ea29" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/76/7668179ede524d6396c8b7d84461ea29" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/80/80a3616ca19596e4da0f10f14d241e9f" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/80/80a3616ca19596e4da0f10f14d241e9f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/84/844f815391db42d49455cbf1a7bfc434" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/84/844f815391db42d49455cbf1a7bfc434" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/87/870353891bb340e2b2a9c8707e7419ba" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/87/870353891bb340e2b2a9c8707e7419ba" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/a8/a825495a4a5d95640bddfc723dbe4324.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/a8/a825495a4a5d95640bddfc723dbe4324.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/b2/b2b693dffac3a4433b3114fea0b7fd4e" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/b2/b2b693dffac3a4433b3114fea0b7fd4e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/b5/b5da970776034f77a070d99423d68791" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/b5/b5da970776034f77a070d99423d68791" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/b9/b95ab00277ee47c687d710a3bb623d0a" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/b9/b95ab00277ee47c687d710a3bb623d0a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/dc/dc443db3e92b4983b9738c1131f555cb" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/dc/dc443db3e92b4983b9738c1131f555cb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/e1/e1007cd261c84053beb0c3537782908d" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/e1/e1007cd261c84053beb0c3537782908d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/e4/e4f4cf1b9b434137a499903a7a1d651a" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/e4/e4f4cf1b9b434137a499903a7a1d651a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/ea/ead147da21254ff9a0a936bdd75e1680" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/ea/ead147da21254ff9a0a936bdd75e1680" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/ed/ed7343f30e3843b3afda8f8b02669cea" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/ed/ed7343f30e3843b3afda8f8b02669cea" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/f5/f5f67c52d1564df4a8936ccd202a3bd8" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/f5/f5f67c52d1564df4a8936ccd202a3bd8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Library/metadata/f7/f70555f144d8491a825f0804e09c671c" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/metadata/f7/f70555f144d8491a825f0804e09c671c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../music circle/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../music circle/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music circle/music circle.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../music circle/music circle.sln" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,11 +71,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/convertnote.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="475">
+              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/symmetry.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -70,6 +105,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/convertnote.py" />
+        <option value="$PROJECT_DIR$/symmetry.py" />
       </list>
     </option>
   </component>
@@ -114,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.symmetry">
     <configuration name="convertnote" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="convertnote" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,8 +172,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="symmetry" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="convertnote" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/symmetry.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.symmetry" />
         <item itemvalue="Python.convertnote" />
       </list>
     </recent_temporary>
@@ -156,14 +214,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17870723" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17860906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32821497" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -180,8 +239,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/convertnote.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        <state relative-caret-position="475">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symmetry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
         </state>
       </provider>
     </entry>
