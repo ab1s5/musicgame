@@ -24,6 +24,10 @@ public class LineParentController : MonoBehaviour
         {
             GetLineJust();
         }
+        else if (time >= timing + 125)
+        {
+            GetMiss();
+        }
     }
 
     public void UpNoteCount()
@@ -35,6 +39,15 @@ public class LineParentController : MonoBehaviour
     {
         hitsound.GetComponent<HitSoundController>().PlayHitSound();
         Debug.Log("Line Just!");
+        Constants.Instance.UpJustLine();
+        Constants.Instance.UpCombo();
+        Destroy(gameObject);
+    }
+
+    void GetMiss()
+    {
+        Constants.Instance.UpMiss();
+        Constants.Instance.CutCombo();
         Destroy(gameObject);
     }
 }

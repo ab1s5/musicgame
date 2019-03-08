@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Constants : MonoBehaviour
 {
@@ -28,6 +26,16 @@ public class Constants : MonoBehaviour
 
     private int musicNumber = 0;
     private const int musicCount = 3;
+
+    private int just;
+    private int justLine;
+    private int slow;
+    private int miss;
+
+    private int combo;
+    private int maxCombo;
+
+    public int nightmarewoodsRandom;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +49,16 @@ public class Constants : MonoBehaviour
         else if (musicNumber == 2) musicName = "wielderbossbgm";
         else if (musicNumber == musicCount) musicNumber = 0;
         else if (musicNumber == -1) musicNumber = musicCount - 1;
+    }
+
+    public void RollNightmarewoods()
+    {
+        nightmarewoodsRandom = Random.Range(0, 100);
+    }
+
+    public int GetNightmarewoods()
+    {
+        return nightmarewoodsRandom;
     }
 
     public void SetDuration(int durationtime)
@@ -78,5 +96,76 @@ public class Constants : MonoBehaviour
     public int GetMusicCount()
     {
         return musicCount;
+    }
+
+    public void ResetJudge()
+    {
+        just = 0;
+        justLine = 0;
+        slow = 0;
+        miss = 0;
+        combo = 0;
+        maxCombo = 0;
+    }
+    public void UpJust()
+    {
+        just++;
+    }
+
+    public void UpJustLine()
+    {
+        justLine++;
+    }
+
+    public void UpSlow()
+    {
+        slow++;
+    }
+
+    public void UpMiss()
+    {
+        miss++;
+    }
+
+    public int GetJust()
+    {
+        return just;
+    }
+
+    public int GetJustLine()
+    {
+        return justLine;
+    }
+
+    public int GetSlow()
+    {
+        return slow;
+    }
+
+    public int GetMiss()
+    {
+        return miss;
+    }
+
+    public void UpCombo()
+    {
+        combo++;
+        if (combo > maxCombo) maxCombo = combo;
+    }
+
+    public void CutCombo()
+    {
+        combo = 0;
+    }
+
+    public int GetCombo()
+    {
+        return combo;
+    }
+
+    public float GetAccuracy()
+    {
+        if ((just + justLine + slow + miss) == 0) return 0;
+        return ((float)3.0 * (float)justLine + (float)just + (float)0.7 * (float)slow) / (float)(3 * justLine + just + slow + miss);
     }
 }

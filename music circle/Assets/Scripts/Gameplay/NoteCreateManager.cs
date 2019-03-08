@@ -23,7 +23,10 @@ public class NoteCreateManager : MonoBehaviour
         TextAsset chart = null;
         if (Constants.Instance.GetMusicNumber() == 0)
         {
-            chart = Resources.Load("Charts/nightmarewoods", typeof(TextAsset)) as TextAsset;
+            Constants.Instance.RollNightmarewoods();
+            if (Constants.Instance.GetNightmarewoods() >= 30) chart = Resources.Load("Charts/nightmarewoods", typeof(TextAsset)) as TextAsset;
+            else if (Constants.Instance.GetNightmarewoods() >= 15) chart = Resources.Load("Charts/runrunbodywash", typeof(TextAsset)) as TextAsset;
+            else chart = Resources.Load("Charts/taebo", typeof(TextAsset)) as TextAsset;
         }
         else if (Constants.Instance.GetMusicNumber() == 1)
         {

@@ -16,6 +16,11 @@ public class TimeManager : MonoBehaviour
     {
         if (time < 0) time += Time.deltaTime;
         //print(time);
+
+        GameSceneTransitionController sceneTransition = GameObject.Find("SceneTransition").GetComponent<GameSceneTransitionController>();
+        if (Constants.Instance.GetMusicName() == "nightmarewoods" && time > 70) sceneTransition.GoToScene();
+        else if (Constants.Instance.GetMusicName() == "yee" && time > 9) sceneTransition.GoToScene();
+        else if (Constants.Instance.GetMusicName() == "wielderbossbgm" && time > 80) sceneTransition.GoToScene();
     }
 
     public int GetCurrenttime()

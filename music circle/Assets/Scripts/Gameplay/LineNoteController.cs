@@ -18,7 +18,7 @@ public class LineNoteController : NoteController
                 gameObject.GetComponentInParent<LineParentController>().UpNoteCount();
             }
 
-            if ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5))
+            else if ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5))
             {
                 hit = true;
                 gameObject.GetComponentInParent<LineParentController>().UpNoteCount();

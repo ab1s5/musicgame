@@ -41,10 +41,18 @@ public class NoteController : MonoBehaviour
             {
                 fastJust = true;
             }
+            if ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5)) // code for 0 <= angle < 22.5
+            {
+                fastJust = true;
+            }
         }
         else if ((timing <= time) && (time < timing + 30))
         {
             if (fastJust || ((-angle >= arcAngle - 22.5) && (-angle <= arcAngle + 22.5)))
+            {
+                GetJust();
+            }
+            else if ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5))
             {
                 GetJust();
             }
@@ -55,31 +63,7 @@ public class NoteController : MonoBehaviour
             {
                 GetSlow();
             }
-        }
-        else if (time >= timing + 125)
-        {
-            Debug.Log(arcAngle);
-            Debug.Log(angle);
-            GetMiss();
-        }
-
-        if ((timing - 30 <= time) && (time < timing)) // code for 0 < angle < 22.5
-        {
-            if ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5))
-            {
-                fastJust = true;
-            }
-        }
-        else if ((timing <= time) && (time < timing + 30))
-        {
-            if (fastJust || ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5)))
-            {
-                GetJust();
-            }
-        }
-        else if ((timing + 30 <= time) && (time < timing + 125))
-        {
-            if ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5))
+            else if ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5))
             {
                 GetSlow();
             }
@@ -88,14 +72,42 @@ public class NoteController : MonoBehaviour
         {
             Debug.Log(arcAngle);
             Debug.Log(angle);
+            Debug.Log(fastJust);
             GetMiss();
         }
+
+        //else if ((timing - 30 <= time) && (time < timing)) 
+        //{
+        //    Debug.Log("check");
+        //    Debug.Log(arcAngle);
+        //    Debug.Log(angle);
+        //    if ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5))
+        //    {
+        //        fastJust = true;
+        //    }
+        //}
+        //else if ((timing <= time) && (time < timing + 30))
+        //{
+        //    if (fastJust || ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5)))
+        //    {
+        //        GetJust();
+        //    }
+        //}
+        //else if ((timing + 30 <= time) && (time < timing + 125))
+        //{
+        //    if ((-angle + 360 >= arcAngle - 22.5) && (-angle + 360 <= arcAngle + 22.5))
+        //    {
+        //        GetSlow();
+        //    }
+        //}
     }
     void GetJust()
     {
         hitsound.GetComponent<HitSoundController>().PlayHitSound();
         if (fastJust) Debug.Log("Fast");
         Debug.Log("Just!");
+        Constants.Instance.UpJust();
+        Constants.Instance.UpCombo();
         Destroy(gameObject);
     }
 
@@ -103,12 +115,16 @@ public class NoteController : MonoBehaviour
     {
         hitsound.GetComponent<HitSoundController>().PlayHitSound();
         Debug.Log("Slow");
+        Constants.Instance.UpSlow();
+        Constants.Instance.UpCombo();
         Destroy(gameObject);
     }
 
     void GetMiss()
     {
         Debug.Log("miss...");
+        Constants.Instance.UpMiss();
+        Constants.Instance.CutCombo();
         Destroy(gameObject);
     }
     //IEnumerator shrink()
