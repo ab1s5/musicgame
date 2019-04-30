@@ -13,23 +13,29 @@ public class NoteController : MonoBehaviour
     protected float scale;
 
     protected bool fastJust;
+    protected bool processed;
+
+    protected GameObject judgeText;
     // Start is called before the first frame update
     protected void Start()
     {
         duration = Constants.Instance.GetDuration();
         hitsound = GameObject.Find("HitSound");
+        judgeText = GameObject.Find("Judge");
         transform.position = new Vector2((float)2.5 * Mathf.Cos(Mathf.Deg2Rad * (angle + 90)), (float)2.5 * Mathf.Sin(Mathf.Deg2Rad * (angle + 90)));
     }
 
     // Update is called once per frame
     protected void Update()
     {
-        time = GameObject.Find("GameData").GetComponent<TimeManager>().GetCurrenttime();
-        scale = (timing - time) / (float)duration;
-        if ((scale < 0) || (scale > 1)) scale = 0;
-        transform.localScale = new Vector2(scale, scale);
-
-        ProcessNote();
+        if (!processed)
+        {
+            time = GameObject.Find("GameData").GetComponent<TimeManager>().GetCurrenttime();
+            scale = (timing - time) / (float)duration;
+            if ((scale < 0) || (scale > 1)) scale = 0;
+            transform.localScale = new Vector2(scale, scale);
+            ProcessNote();
+        }
     }
 
     protected virtual void ProcessNote()
@@ -120,7 +126,9 @@ public class NoteController : MonoBehaviour
         Debug.Log("Just!");
         Constants.Instance.UpJust();
         Constants.Instance.UpCombo();
-        Destroy(gameObject);
+        processed = true;
+        judgeText.GetComponent<JudgeTextController>().ShowText("just");
+        StartCoroutine(Bomb(2));
     }
 
     void GetSlow()
@@ -129,7 +137,9 @@ public class NoteController : MonoBehaviour
         Debug.Log("Slow");
         Constants.Instance.UpSlow();
         Constants.Instance.UpCombo();
-        Destroy(gameObject);
+        processed = true;
+        judgeText.GetComponent<JudgeTextController>().ShowText("slow");
+        StartCoroutine(Bomb(1));
     }
 
     void GetMiss()
@@ -137,14 +147,21 @@ public class NoteController : MonoBehaviour
         Debug.Log("miss...");
         Constants.Instance.UpMiss();
         Constants.Instance.CutCombo();
+        processed = true;
+        judgeText.GetComponent<JudgeTextController>().ShowText("miss");
         Destroy(gameObject);
     }
-    //IEnumerator shrink()
-    //{
-    //    for (int i = duration; i > 0; i--)
-    //    {
-            
-    //        yield return new WaitForSeconds(.001f);
-    //    }
-    //}
+
+    IEnumerator Bomb(float size)
+    {
+        Color color = gameObject.GetComponent<SpriteRenderer>().color;
+        while (color.a > 0f)
+        {
+            color.a -= 5 * Time.deltaTime;
+            gameObject.GetComponent<SpriteRenderer>().color = color;
+            transform.localScale = new Vector2(transform.localScale.x + size * 5 * Time.deltaTime, transform.localScale.y + size * 5 * Time.deltaTime);
+            yield return null;
+        }
+        Destroy(gameObject);
+    }
 }
